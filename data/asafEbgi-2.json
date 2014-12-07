@@ -1,0 +1,106 @@
+{	
+        "age": 35, 
+        "id": "asafEbgi-2",
+		"numId": 2,
+        "image": "images/candidates/asaf-ebgi-2.jpg", 
+        "name": "Asaf Ebgi", 
+        "skillSummary": "Javascript, AngularJS, KnockoutJS, BackboneJS, Java, Spring MVC, MongoDB",
+		"location": "Atlanta, GA",
+		"rating": 5.0,
+		"numRatings": 114,
+		"superlative": "Pulsar",
+		"ecoVal": 5.0,	
+		"offersRejected": [
+				88500,
+				101000
+		],
+		"offersAccepted": [
+				165000
+		],	
+		 "education": {
+			"school": [
+				"University of North Carolina, Charlotte",
+				"Georgia Institute of Technology"
+			],
+			"degree": [
+				"B.S. Electrical Engineering",
+				"B.S. Computer Engineering",
+				"M.S. Computer Engineering"
+			]
+		},
+		"bio": "Asaf is an electrical and computer engineer with an experienced background in high technology. Asaf loves solving complex problems and implementing novel solutions. His expert knowledge of computer architecture, advanced software programming concepts, and embedded system design make him the ultimate threat to any technological challenge.",
+		"skillCost": [
+			{
+				"skillSet": {
+					"name": "Languages",
+					"skills": [
+						"Javascript",
+						"Python",
+						"Java",
+						"C#",
+						"C++"
+					],
+					"value": 60000,
+					"frontEnd": true,
+					"backEnd": true
+				}
+			},
+			{
+				"skillSet": {
+					"name": "OpenSource JS Libraries",
+					"skills":[ 
+						"AngularJS",
+						"BackboneJS",
+						"MarionetteJS",
+						"RequireJS",
+						"KnockoutJS",
+						"UnderscoreJS",
+						"Django",
+						"JQuery"
+					],
+					"value": 60000,
+					"frontEnd": true,
+					"backEnd": false
+				}
+			},
+			{
+				"skillSet": {
+					"name": "Application Framework",
+					"skills": [
+						".NET MVC",
+						"Spring MVC",
+						"NodeJS"
+					],
+					"value": 60000,
+					"frontEnd": true,
+					"backEnd": true
+				}
+			},
+			{			
+				"skillSet": {
+					"name": "Web Design",
+					"skills": [
+						"HTML5",
+						"CSS3",
+						"Bootstrap"
+					],
+					"value": 40000,
+					"frontEnd": true,
+					"backEnd": false
+				}
+			},
+			{
+				"skillSet": {
+					"name": "Database",
+					"skills": [
+						"SQL",
+						"Mongo",
+						"Redis"
+					],
+					"value": 50000,
+					"frontEnd": false,
+					"backEnd": true
+				}
+			}
+		]
+}

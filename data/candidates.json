@@ -1,0 +1,116 @@
+[
+    {
+        "age": 31, 
+        "id": "garyCooper-1",
+		"numId": 1,		
+        "imageUrl": "images/candidates/gary-cooper-1.jpg", 
+        "name": "Gary Cooper", 
+        "skillSummary": [
+			"Javascript",
+			"AngularJS",
+			"BackboneJS",
+			"JQuery",
+			"HTML5",
+			"CSS3",
+			"Bootstrap",
+			".NET MVC",
+			"C#"
+		],
+		"location": "Charlotte, NC",
+		"rating": 5.0,
+		"numRatings": 32,
+		"superlative": "SuperStar",
+		"ecoVal": 4.5,
+		"offersRejected": [
+				72000,
+				81000
+		],
+		"offersAccepted": [
+				93000
+		]
+    }, 
+	{
+        "age": 35, 
+        "id": "asafEbgi-2",
+		"numId": 2,
+        "imageUrl": "images/candidates/asaf-ebgi-2.jpg", 
+        "name": "Asaf Ebgi", 
+         "skillSummary": [
+			"Javascript",
+			"AngularJS",
+			"BackboneJS",
+			"KnockoutJS",
+			"JQuery",
+			"HTML5",
+			"CSS3",
+			"Bootstrap",
+			".NET MVC",
+			"Spring MVC",
+			"C#",
+			"Java",
+			"Python",
+			"C++"
+		],
+		"location": "Atlanta, GA",
+		"rating": 5.0,
+		"numRatings": 114,
+		"superlative": "Pulsar",
+		"ecoVal": 5.0,
+		"offersRejected": [
+				88500,
+				101000
+		],
+		"offersAccepted": [
+				165000
+		]		
+    }, 
+	{
+        "age": 22, 
+        "id": "theIntern-3",
+		"numId": 3,
+        "imageUrl": "images/candidates/the-intern-3.jpg", 
+        "name": "The Intern", 
+        "skillSummary": [
+			"Javascript",
+			"HTML",
+			"C++"
+		],
+		"location": "San Francisco, CA",
+		"rating": 2.5,
+		"numRatings": 3,
+		"superlative": "RedDwarf",
+		"ecoVal": 3.8,
+		"offersRejected": [
+		],
+		"offersAccepted": [
+				72000
+		]
+    },
+	{
+        "age": 28, 
+        "id": "banksy-4",
+		"numId": 4,		
+        "imageUrl": "images/candidates/banksy-4.jpg", 
+        "name": "Banksy", 
+        "skillSummary": [
+			"Graphic Design",
+			"Photoshop",
+			"Gimp",
+			"Adobe Suite",
+			"HTML5",
+			"CSS3",
+			"Javascript"
+		],
+		"location": "Miami, FL",
+		"rating": 4.3,
+		"numRatings": 78,
+		"superlative": "Bright Giant",
+		"ecoVal": 4.9,
+		"offersRejected": [
+				82600
+		],
+		"offersAccepted": [
+				88000
+		]
+    }      
+]
