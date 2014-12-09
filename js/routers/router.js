@@ -3,7 +3,7 @@ define(['marionette'], function (Marionette) {
 
     return Marionette.AppRouter.extend({
         appRoutes: {
-            '': 'showDefault',
+            'home': 'showDefault',
             // 'transcript': 'showDefault',
             // 'transcript/': 'showDefault',
             // 'folder/:folder': 'showTranscriptsByFolder',

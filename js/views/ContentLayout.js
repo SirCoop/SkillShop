@@ -17,6 +17,7 @@ define(['app', 'marionette', 'text!templates/content-layout.html', 'views/Nested
 
         onShow: function(){
         	this.region1.show(new NestedRegionsLayout());
+        	this.region2.show(new NestedRegionsLayout());
 
         }
 
