@@ -1,30 +1,34 @@
 {
-	"name": "skill-shop",
-	"main": "server.js",
-	"version": "0.0.1",
-	"private": "true",
-	"description": "an open source human resource tool",
-	"dependencies": {
-		"express": "~4.0.0",
-    	"morgan": "~1.0.0",
-    	"body-parser": "~1.0.0",
-   		"method-override": "~1.0.0",
-		"mongoose": "~3.8.20"
-	},
-	"repository": {
- 	 	"type": "git",
-  		"url": "https://github.com/sircoop/skillshop.git"
-	},
-	"keywords": [
+  "name": "skill-shop",
+  "main": "server.js",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "an open source human resource tool",
+  "dependencies": {
+    "express": "~4.0.0",
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "method-override": "~1.0.0",
+    "mongoose": "~3.8.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sircoop/skillshop.git"
+  },
+  "keywords": [
     "skill",
     "shop",
     "node",
     "app"
-  	],
-	"engines": {
-   		"node": "0.10.x",
-    	"npm": "1.3.x"
-  	}
+  ],
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
+  }
 }
-
-

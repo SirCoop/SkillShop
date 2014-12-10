@@ -1,10 +1,10 @@
 // RequireJS Build File
 
 ({
-    baseUrl: "js/",
+    baseUrl: "public/js/",
     //specifies location of runtime config i.e. config file
     //loaded into browser at runtime
-    mainConfigFile: 'js/main.js',
+    mainConfigFile: 'public/js/main.js',
     keepBuildDir: true,
     wrapShim: false,
     optimize: "uglify2",
@@ -46,7 +46,7 @@
     //'excludeShallow', 'include' and 'insertRequire' are all allowed as siblings
     //to name. The name of the optimized file is specified by 'out'.
     name: "main",
-    out: "js/main.min.js",
+    out: "build/main.min.js",
     //Another way to use wrap, but uses default wrapping of:
     //(function() { + content + }());
     wrap: true,

@@ -9,7 +9,7 @@ var application_root = __dirname,
 // Web framework
 	express = require('express'),					
 // Utilities for dealing with file paths
-  path = require('path'),	
+  	path = require('path'),	
 // MongoDB integration						
 	mongoose = require('mongoose');					
 //===============================================
@@ -27,7 +27,9 @@ console.log('__dirname: ', __dirname);
 //with app.use();
 
 // where to serve static content
-app.use(express.static(application_root));
+app.use(express.static(application_root + '\\public'));
+
+console.log('staticDir: ', application_root + '\\public');
 
 // log every request to the console
 app.use(morgan('dev')); 					
@@ -53,12 +55,14 @@ if ('development' == env) {
 //create Router instance
 var router = express.Router();
 
+//	this is url route
 router.get('/', function(req, res) {
-    	res.sendfile('index.html');
+		//	this is the file directory with respect to server.js
+    	res.sendfile('public/index.html');
 	}	
 );
 
-//created default route
+//created default url route
 app.use('/skillshop', router);
 
 
