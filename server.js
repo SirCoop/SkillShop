@@ -20,7 +20,7 @@ var app = express();
 
 // configure server
 
-console.log('__dirname: ', __dirname);
+//console.log('__dirname: ', __dirname);
 
 
 //NOTE: middlewares are loaded into an express app
@@ -29,7 +29,7 @@ console.log('__dirname: ', __dirname);
 // where to serve static content
 app.use(express.static(application_root + '\\public'));
 
-console.log('staticDir: ', application_root + '\\public');
+// console.log('staticDir: ', application_root + '\\public');
 
 // log every request to the console
 app.use(morgan('dev')); 					
@@ -70,7 +70,7 @@ app.use('/skillshop', router);
 //app.use(express.errorHandler({dumpExceptions: true, showStack: true}));
 
 // start server
-var port = 4711;
+var port =  process.env.PORT || 4711;
 app.listen(port, function(){
 	console.log('Express server listening on port %d in %s mode', port, app.settings.env);
 });
