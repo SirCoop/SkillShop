@@ -1,4 +1,68 @@
- // Filename: main.js
+//SkillShop app Module
+
+define(
+  ['marionette'], 
+  function (Marionette) {
+      "use strict";
+
+      var app = new Marionette.Application();
+
+      app.addRegions({
+          contentRegion: "#content" //adds property to app called app.contentRegion which is assigned to DOM element with id="content"
+      });
+
+      app.globals = {};
+
+      app.timeout = null;
+
+      app.addInitializer(function () {
+    
+        //extending Date prototype to return double digit minutes 
+        Date.prototype.getMinDoubleDigits = function () {
+            var cMin = this.getMinutes();
+            if (cMin < 10) 
+                return ("0" + cMin.toString());
+            else 
+                return cMin.toString();
+        }
+    });
+
+      return app;
+  }
+);;//Filename: boilerplate.js
+
+/*
+	define() - defines modules, named or unnamed
+	
+	define(
+		module_id, //optional
+		[dependencies], //optional
+		function(dep1,...n){
+			
+			return //value that defines module export
+
+		}
+	);
+
+	require() - loads deps dynamically within a module or load code in top-level file
+
+	require(['mod1', 'mod2'], 
+		function(mod1, mod2) {
+			//code
+		}
+	)
+
+*/
+
+// These are path alias that we configured in our bootstrap
+define(
+	['jquery', 'underscore', 'backbone'],
+ 	function($, _, Backbone){
+	// Above we have passed in jQuery, Underscore and Backbone
+  	// They will not be accessible in the global scope
+  	return {};
+  	// What we return here will be used by other modules
+});; // Filename: main.js
 
 // Require.js allows shortcut alias configuration
 require.config({
@@ -60,3 +124,10 @@ require(['app', 'underscore', 'backbone', 'marionette', 'routers/router', 'contr
 
 
 
+;// define(function (require) {
+//     "use strict";
+//     return {
+//         contentLayout: _.template(require('text!templates/content-layout.html'))
+       
+//     };
+// });
