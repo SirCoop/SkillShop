@@ -1,6 +1,33 @@
 // RequireJS Build File
 
 ({
+
+     paths: {
+        tpl        : "libs/tpl",
+        text       : 'libs/text',
+        json3      : 'libs/json3',        
+        jquery     : "libs/jquery-1.11.1.min",   
+        underscore : 'libs/underscore.min',
+        backbone   : "libs/backbone.min",
+        marionette : 'libs/backbone.marionette.min',
+        bootstrap  : 'libs/bootstrap.min',
+    },
+    shim : {
+        backbone : {
+            deps : ["jquery", "underscore"],
+            exports : "Backbone"
+        },
+        bootstrap : {
+            deps : ["jquery"]
+        },
+        jqbase64 : {
+            deps : ["jquery"],
+            exports : "jQuery"
+        },
+        underscore : {
+            exports : "_"
+        }
+    },
     baseUrl: "public/js/",
     //specifies location of runtime config i.e. config file
     //loaded into browser at runtime
@@ -30,13 +57,13 @@
     skipPragmas: true,
     //If skipModuleInsertion is false, then files that do not use define()
     //to define modules will get a define() placeholder inserted for them.
-    skipModuleInsertion: false,
+    skipModuleInsertion: true,
     stubModules: ['text'],
     optimizeAllPluginResources: false,
     //Finds require() dependencies inside a require() or define call. By default
     //this value is false, because those resources should be considered dynamic/runtime
     //calls.
-    findNestedDependencies: false,
+    findNestedDependencies: true,
     //If set to true, any files that were combined into a build bundle will be
     //removed from the output folder.
     removeCombined: false,
@@ -46,7 +73,7 @@
     //'excludeShallow', 'include' and 'insertRequire' are all allowed as siblings
     //to name. The name of the optimized file is specified by 'out'.
     name: "main",
-    out: "build/main.min.js",
+    out: "public/js/main.min.js",
     //Another way to use wrap, but uses default wrapping of:
     //(function() { + content + }());
     wrap: true,
